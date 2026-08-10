@@ -9,118 +9,36 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; scroll-behavior: smooth; }
 
-        .topbar {
-            background: #c8102e;
-            color: white;
-            text-align: center;
-            padding: 8px;
-            font-size: 0.9rem;
-            font-weight: 600;
-        }
-
+        .topbar { background: #c8102e; color: white; text-align: center; padding: 8px; font-size: 0.9rem; font-weight: 600; }
         .navbar {
-            background: #0f172a;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 40px;
-            height: 70px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            background: #0f172a; display: flex; align-items: center; justify-content: space-between;
+            padding: 0 30px; height: 70px; position: sticky; top: 0; z-index: 100;
         }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: white;
-            font-weight: 700;
-            font-size: 1.15rem;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .logo img { height: 40px; }
-        .nav-links { display: flex; gap: 28px; list-style: none; }
-        .nav-links a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.2s;
-            cursor: pointer;
-        }
+        .logo { display: flex; align-items: center; gap: 12px; color: white; font-weight: 700; font-size: 1.1rem; text-decoration: none; cursor: pointer; }
+        .logo img { height: 38px; }
+        .nav-links { display: flex; gap: 22px; list-style: none; flex-wrap: wrap; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; font-weight: 500; font-size: 0.9rem; cursor: pointer; }
         .nav-links a:hover, .nav-links a.active { color: white; }
-        .btn-area {
-            background: #c8102e;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
+        .btn-area { background: #c8102e; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.85rem; }
 
         .page { display: none; }
         .page.active { display: block; }
 
         .hero {
-            height: 85vh;
-            background: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.75)),
-                        url('https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1600') center/cover no-repeat;
-            display: flex;
-            align-items: center;
-            padding: 0 80px;
-            color: white;
+            height: 85vh; background: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.75)),
+            url('https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1600') center/cover no-repeat;
+            display: flex; align-items: center; padding: 0 80px; color: white;
         }
         .hero-content { max-width: 650px; }
-        .badge {
-            display: inline-block;
-            background: rgba(200,16,46,0.2);
-            border: 1px solid rgba(200,16,46,0.5);
-            color: #fca5a5;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-bottom: 20px;
-        }
+        .badge { display: inline-block; background: rgba(200,16,46,0.2); border: 1px solid rgba(200,16,46,0.5); color: #fca5a5; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 20px; }
         .hero h1 { font-size: 3.2rem; line-height: 1.15; margin-bottom: 18px; }
         .hero h1 span { color: #c8102e; }
         .hero p { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 30px; line-height: 1.6; }
         .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; }
-        .btn-primary {
-            background: #c8102e;
-            color: white;
-            padding: 14px 28px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-        .btn-outline {
-            border: 2px solid white;
-            color: white;
-            padding: 12px 26px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            cursor: pointer;
-            background: transparent;
-            font-size: 1rem;
-        }
+        .btn-primary { background: #c8102e; color: white; padding: 14px 28px; border-radius: 10px; font-weight: 600; border: none; cursor: pointer; font-size: 1rem; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-outline { border: 2px solid white; color: white; padding: 12px 26px; border-radius: 10px; font-weight: 600; cursor: pointer; background: transparent; font-size: 1rem; }
 
-        .stats {
-            background: #0f172a;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            padding: 40px 80px;
-            text-align: center;
-            color: white;
-        }
+        .stats { background: #0f172a; display: grid; grid-template-columns: repeat(4, 1fr); padding: 40px 80px; text-align: center; color: white; }
         .stat-num { font-size: 2.4rem; font-weight: 800; color: #c8102e; }
         .stat-label { font-size: 0.85rem; color: #94a3b8; margin-top: 6px; text-transform: uppercase; letter-spacing: 1px; }
 
@@ -129,575 +47,482 @@
         .section-title h2 { font-size: 2.2rem; margin-bottom: 12px; }
         .section-title p { color: #64748b; max-width: 550px; margin: 0 auto; }
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-        .card {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 16px;
-            padding: 32px;
-            transition: box-shadow 0.25s, transform 0.25s;
-        }
-        .card:hover {
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-            transform: translateY(-4px);
-        }
-        .card-icon {
-            width: 54px;
-            height: 54px;
-            background: #fee2e2;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            color: #c8102e;
-            margin-bottom: 18px;
-        }
-        .card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+        .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; transition: 0.25s; }
+        .card:hover { box-shadow: 0 15px 40px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .card-icon { width: 54px; height: 54px; background: #fee2e2; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #c8102e; margin-bottom: 18px; }
+        .card h3 { margin-bottom: 10px; }
         .card p { color: #64748b; font-size: 0.95rem; line-height: 1.6; margin-bottom: 18px; }
-        .card a, .card span.link {
-            color: #c8102e;
-            font-weight: 600;
-            text-decoration: none;
-            font-size: 0.95rem;
-            cursor: pointer;
-        }
+        .card span.link { color: #c8102e; font-weight: 600; cursor: pointer; }
 
-        /* PRENOTAZIONI FORM */
-        .prenota-wrapper {
-            max-width: 680px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-            overflow: hidden;
+        /* FORM STYLES */
+        .form-wrapper { max-width: 720px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); overflow: hidden; }
+        .form-header { background: #c8102e; color: white; padding: 28px; text-align: center; }
+        .form-header h2 { font-size: 1.5rem; margin-bottom: 6px; }
+        .form-body { padding: 32px; }
+        .form-body label { display: block; font-weight: 600; margin: 16px 0 6px; }
+        .form-body input, .form-body select, .form-body textarea {
+            width: 100%; padding: 12px 14px; border: 2px solid #ddd; border-radius: 10px; font-size: 1rem;
         }
-        .prenota-header {
-            background: #c8102e;
-            color: white;
-            padding: 28px;
-            text-align: center;
-        }
-        .prenota-header h2 { font-size: 1.6rem; margin-bottom: 6px; }
-        .prenota-body { padding: 32px; }
-        .prenota-body label {
-            display: block;
-            font-weight: 600;
-            margin: 16px 0 6px;
-            color: #333;
-        }
-        .prenota-body input, .prenota-body select, .prenota-body textarea {
-            width: 100%;
-            padding: 12px 14px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 1rem;
-        }
-        .prenota-body input:focus, .prenota-body select:focus, .prenota-body textarea:focus {
-            outline: none;
-            border-color: #c8102e;
-        }
-        .row-form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
+        .form-body input:focus, .form-body select:focus, .form-body textarea:focus { outline: none; border-color: #c8102e; }
+        .row-form { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
         .altro-box { display: none; margin-top: 10px; }
-        .btn-invia {
-            width: 100%;
-            background: #c8102e;
-            color: white;
-            border: none;
-            padding: 16px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 12px;
-            cursor: pointer;
-            margin-top: 25px;
-        }
+        .btn-invia { width: 100%; background: #c8102e; color: white; border: none; padding: 16px; font-size: 1.1rem; font-weight: 600; border-radius: 12px; cursor: pointer; margin-top: 25px; }
         .btn-invia:hover { background: #a00d25; }
-        .btn-invia:disabled { background: #999; cursor: not-allowed; }
-        #statusPrenota {
-            margin-top: 20px;
-            padding: 14px;
-            border-radius: 10px;
-            text-align: center;
-            font-weight: 600;
-            display: none;
+        .btn-invia:disabled { background: #999; }
+        .status-box { margin-top: 20px; padding: 14px; border-radius: 10px; text-align: center; font-weight: 600; display: none; }
+
+        /* FARMACI ORDER */
+        .farmaci-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .farmaco-item {
+            display: flex; align-items: center; gap: 10px; background: #f8fafc;
+            border: 1px solid #e2e8f0; border-radius: 10px; padding: 10px 14px;
+        }
+        .farmaco-item input[type="checkbox"] { width: 18px; height: 18px; accent-color: #c8102e; }
+        .farmaco-item label { margin: 0; font-weight: 500; flex: 1; cursor: pointer; }
+        .farmaco-item .prezzo { color: #c8102e; font-weight: 700; font-size: 0.9rem; }
+        .farmaco-item input[type="number"] {
+            width: 60px; padding: 6px; border: 1px solid #ddd; border-radius: 6px; text-align: center;
+        }
+        .totale-box {
+            background: #0f172a; color: white; padding: 18px 24px; border-radius: 12px;
+            display: flex; justify-content: space-between; align-items: center; margin-top: 20px; font-size: 1.2rem;
+        }
+        .totale-box span { color: #fca5a5; font-weight: 800; font-size: 1.4rem; }
+        .categoria-title {
+            font-weight: 700; color: #c8102e; margin: 20px 0 10px; padding-bottom: 6px;
+            border-bottom: 2px solid #fee2e2; font-size: 1rem;
         }
 
-        /* PREZZI */
+        /* PREZZI LISTINO */
         .prezzi-section { background: #f8fafc; }
-        .prezzo-categoria {
-            background: white;
-            border-radius: 16px;
-            border: 1px solid #e2e8f0;
-            margin-bottom: 28px;
-            overflow: hidden;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 28px;
-        }
-        .prezzo-header {
-            background: #c8102e;
-            color: white;
-            padding: 16px 24px;
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
+        .prezzo-categoria { background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin: 0 auto 28px; max-width: 900px; overflow: hidden; }
+        .prezzo-header { background: #c8102e; color: white; padding: 16px 24px; font-weight: 700; }
         .prezzo-header.dark { background: #0f172a; }
         .prezzo-header.blue { background: #1e40af; }
         .prezzo-header.green { background: #15803d; }
-        .prezzo-lista { padding: 8px 0; }
-        .prezzo-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 14px 24px;
-            border-bottom: 1px solid #f1f5f9;
-            gap: 20px;
-        }
+        .prezzo-item { display: flex; justify-content: space-between; padding: 14px 24px; border-bottom: 1px solid #f1f5f9; gap: 20px; }
         .prezzo-item:last-child { border-bottom: none; }
-        .prezzo-nome { font-weight: 500; flex: 1; }
-        .prezzo-nome small {
-            display: block;
-            color: #64748b;
-            font-weight: 400;
-            font-size: 0.85rem;
-            margin-top: 3px;
-        }
+        .prezzo-nome { font-weight: 500; }
+        .prezzo-nome small { display: block; color: #64748b; font-size: 0.85rem; margin-top: 3px; }
         .prezzo-valore { font-weight: 700; color: #c8102e; white-space: nowrap; }
         .prezzo-valore.free { color: #15803d; }
 
-        footer {
-            background: #0f172a;
-            color: #94a3b8;
-            padding: 40px 80px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
+        footer { background: #0f172a; color: #94a3b8; padding: 40px 80px; text-align: center; font-size: 0.9rem; }
         footer strong { color: white; }
 
         @media (max-width: 900px) {
-            .hero { padding: 0 30px; height: auto; padding-top: 80px; padding-bottom: 80px; }
+            .hero { padding: 60px 25px; height: auto; }
             .hero h1 { font-size: 2.2rem; }
-            .stats, .section { padding: 40px 25px; }
-            .stats { grid-template-columns: repeat(2, 1fr); gap: 25px; }
-            .cards { grid-template-columns: 1fr; }
+            .stats, .section { padding: 40px 20px; }
+            .stats { grid-template-columns: 1fr 1fr; gap: 20px; }
+            .cards, .farmaci-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .row-form { grid-template-columns: 1fr; }
-            .prezzo-item { flex-direction: column; gap: 4px; }
         }
     </style>
 </head>
 <body>
 
-    <div class="topbar">
-        <i class="fas fa-phone-alt"></i> Emergenze: <strong>118</strong> (Servizio attivo 24/7)
-    </div>
+<div class="topbar"><i class="fas fa-phone-alt"></i> Emergenze: <strong>118</strong> (Servizio attivo 24/7)</div>
 
-    <nav class="navbar">
-        <a class="logo" onclick="mostraPagina('home')">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Emblem_of_the_Italian_Red_Cross.svg/200px-Emblem_of_the_Italian_Red_Cross.svg.png" alt="CRI">
-            CROCE ROSSA ITALIANA
-        </a>
-        <ul class="nav-links">
-            <li><a onclick="mostraPagina('home')" id="nav-home" class="active">HOME</a></li>
-            <li><a onclick="mostraPagina('prenotazioni')" id="nav-prenotazioni">PRENOTAZIONI</a></li>
-            <li><a onclick="mostraPagina('farmacia')" id="nav-farmacia">LA NOSTRA FARMACIA</a></li>
-            <li><a onclick="mostraPagina('contatti')" id="nav-contatti">CONTATTI</a></li>
-        </ul>
-        <a href="#" class="btn-area"><i class="fas fa-lock"></i> Area Personale</a>
-    </nav>
+<nav class="navbar">
+    <a class="logo" onclick="mostraPagina('home')">
+        <img src="https://upload.wikimedia.org/wikipedia/it/4/4a/Emblema_CRI.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original" alt="CRI">
+        CROCE ROSSA ITALIANA
+    </a>
+    <ul class="nav-links">
+        <li><a onclick="mostraPagina('home')" id="nav-home" class="active">HOME</a></li>
+        <li><a onclick="mostraPagina('prenotazioni')" id="nav-prenotazioni">PRENOTAZIONI</a></li>
+        <li><a onclick="mostraPagina('ordine')" id="nav-ordine">ORDINE FARMACIA</a></li>
+        <li><a onclick="mostraPagina('farmacia')" id="nav-farmacia">LISTINO PREZZI</a></li>
+        <li><a onclick="mostraPagina('contatti')" id="nav-contatti">CONTATTI</a></li>
+    </ul>
+    <a href="#" class="btn-area"><i class="fas fa-lock"></i> Area Personale</a>
+</nav>
 
-    <!-- ==================== HOME ==================== -->
-    <div id="page-home" class="page active">
-        <section class="hero">
-            <div class="hero-content">
-                <div class="badge">❤️ Salute e Prevenzione</div>
-                <h1>Proteggiamo la tua<br><span>Salute</span> ogni giorno</h1>
-                <p>L'eccellenza medica e il calore umano al tuo servizio. Prenota visite specialistiche, accedi alla nostra farmacia H24 e scopri i nostri professionisti.</p>
-                <div class="hero-btns">
-                    <button class="btn-primary" onclick="mostraPagina('prenotazioni')">
-                        <i class="fas fa-calendar-check"></i> Prenota Subito
-                    </button>
-                    <button class="btn-outline" onclick="mostraPagina('farmacia')">Scopri la Farmacia</button>
-                </div>
+<!-- HOME -->
+<div id="page-home" class="page active">
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge">❤️ Salute e Prevenzione</div>
+            <h1>Proteggiamo la tua<br><span>Salute</span> ogni giorno</h1>
+            <p>L'eccellenza medica e il calore umano al tuo servizio. Prenota visite, ordina farmaci e scopri i nostri servizi.</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="mostraPagina('prenotazioni')"><i class="fas fa-calendar-check"></i> Prenota Subito</button>
+                <button class="btn-outline" onclick="mostraPagina('ordine')">Ordina Farmaci</button>
             </div>
-        </section>
-
-        <div class="stats">
-            <div><div class="stat-num">24/7</div><div class="stat-label">Pronto Intervento</div></div>
-            <div><div class="stat-num">150+</div><div class="stat-label">Professionisti Medici</div></div>
-            <div><div class="stat-num">10k</div><div class="stat-label">Interventi Annui</div></div>
-            <div><div class="stat-num">100%</div><div class="stat-label">Impegno e Dedizione</div></div>
         </div>
-
-        <section class="section">
-            <div class="section-title">
-                <h2>I Nostri Dipartimenti</h2>
-                <p>Un polo sanitario completo progettato per rispondere tempestivamente e con la massima professionalità a ogni tua esigenza.</p>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-stethoscope"></i></div>
-                    <h3>Prenotazioni Visite</h3>
-                    <p>Prenota in modo rapido visite specialistiche, esami diagnostici e screening preventivi.</p>
-                    <span class="link" onclick="mostraPagina('prenotazioni')">Accedi all'agenda →</span>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-pills"></i></div>
-                    <h3>La Nostra Farmacia</h3>
-                    <p>Una farmacia sempre fornita e aperta H24. Farmaci, dispositivi medici e consulenza farmaceutica.</p>
-                    <span class="link" onclick="mostraPagina('farmacia')">Scopri i servizi →</span>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-user-md"></i></div>
-                    <h3>I Nostri Professionisti</h3>
-                    <p>Un team di medici, chirurghi, infermieri e soccorritori altamente specializzati.</p>
-                    <span class="link">Conosci il team →</span>
-                </div>
-            </div>
-        </section>
+    </section>
+    <div class="stats">
+        <div><div class="stat-num">24/7</div><div class="stat-label">Pronto Intervento</div></div>
+        <div><div class="stat-num">150+</div><div class="stat-label">Professionisti Medici</div></div>
+        <div><div class="stat-num">10k</div><div class="stat-label">Interventi Annui</div></div>
+        <div><div class="stat-num">100%</div><div class="stat-label">Impegno e Dedizione</div></div>
     </div>
-
-    <!-- ==================== PRENOTAZIONI ==================== -->
-    <div id="page-prenotazioni" class="page">
-        <section class="section" style="background:#f8fafc; min-height:80vh;">
-            <div class="section-title">
-                <h2>Prenota un Servizio</h2>
-                <p>Compila il modulo sottostante per richiedere visite, certificati o altri servizi.</p>
+    <section class="section">
+        <div class="section-title"><h2>I Nostri Dipartimenti</h2></div>
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-stethoscope"></i></div>
+                <h3>Prenotazioni Visite</h3>
+                <p>Prenota visite specialistiche ed esami diagnostici.</p>
+                <span class="link" onclick="mostraPagina('prenotazioni')">Accedi all'agenda →</span>
             </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-pills"></i></div>
+                <h3>Ordine Farmacia</h3>
+                <p>Ordina farmaci e prodotti sanitari online.</p>
+                <span class="link" onclick="mostraPagina('ordine')">Ordina ora →</span>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-list"></i></div>
+                <h3>Listino Prezzi</h3>
+                <p>Consulta il tariffario completo dei servizi.</p>
+                <span class="link" onclick="mostraPagina('farmacia')">Vedi prezzi →</span>
+            </div>
+        </div>
+    </section>
+</div>
 
-            <div class="prenota-wrapper">
-                <div class="prenota-header">
-                    <h2>📅 Modulo di Prenotazione</h2>
-                    <p style="opacity:0.9; font-size:0.95rem;">Croce Rossa Italiana - Dipartimento Sanitario</p>
+<!-- PRENOTAZIONI -->
+<div id="page-prenotazioni" class="page">
+    <section class="section" style="background:#f8fafc; min-height:80vh;">
+        <div class="section-title"><h2>Prenota un Servizio</h2><p>Compila il modulo per richiedere visite o certificati.</p></div>
+        <div class="form-wrapper">
+            <div class="form-header"><h2>📅 Modulo di Prenotazione</h2><p style="opacity:0.9;font-size:0.95rem;">Croce Rossa Italiana</p></div>
+            <div class="form-body">
+                <label>Nome e Cognome *</label>
+                <input type="text" id="nome" placeholder="Es. Tony Stark">
+                <div class="row-form">
+                    <div><label>Data di Nascita *</label><input type="date" id="dataNascita"></div>
+                    <div><label>Telefono</label><input type="tel" id="telefono" placeholder="3331234567"></div>
                 </div>
-                <div class="prenota-body">
-                    <label>Nome e Cognome *</label>
-                    <input type="text" id="nome" placeholder="Es. Tony Stark" required>
-
-                    <div class="row-form">
-                        <div>
-                            <label>Data di Nascita *</label>
-                            <input type="date" id="dataNascita" required>
-                        </div>
-                        <div>
-                            <label>Telefono</label>
-                            <input type="tel" id="telefono" placeholder="Es. 3331234567">
-                        </div>
-                    </div>
-
-                    <label>Discord ID (opzionale)</label>
-                    <input type="text" id="discordId" placeholder="Es. 1475551757882383878">
-
-                    <div class="row-form">
-                        <div>
-                            <label>Data Richiesta *</label>
-                            <input type="date" id="dataRichiesta" required>
-                        </div>
-                        <div>
-                            <label>Fascia Oraria *</label>
-                            <select id="fasciaOraria" required>
-                                <option value="">Seleziona...</option>
-                                <option value="08:00 - 10:00">08:00 - 10:00</option>
-                                <option value="10:00 - 12:00">10:00 - 12:00</option>
-                                <option value="12:00 - 14:00">12:00 - 14:00</option>
-                                <option value="14:00 - 16:00">14:00 - 16:00</option>
-                                <option value="16:00 - 18:00">16:00 - 18:00</option>
-                                <option value="18:00 - 20:00">18:00 - 20:00</option>
-                                <option value="20:00 - 22:00">20:00 - 22:00</option>
-                                <option value="Altro">Altro</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="altro-box" id="altraFasciaBox">
-                        <label>Specifica fascia oraria</label>
-                        <input type="text" id="altraFascia" placeholder="Es. 21:00 - 22:30">
-                    </div>
-
-                    <label>Servizio Richiesto *</label>
-                    <select id="servizio" required>
-                        <option value="">Seleziona...</option>
-                        <option value="Visita Medica">Visita Medica</option>
-                        <option value="Medicazione">Medicazione</option>
-                        <option value="Colloquio">Colloquio</option>
-                        <option value="Controllo">Controllo</option>
-                        <option value="Visita Psicologica">Visita Psicologica</option>
-                        <option value="Test Attitudinale">Test Attitudinale</option>
-                        <option value="Certificato Anamnestico">Certificato Anamnestico</option>
-                        <option value="Altro">Altro</option>
-                    </select>
-
-                    <div class="altro-box" id="altroServizioBox">
-                        <label>Specifica servizio</label>
-                        <input type="text" id="altroServizio" placeholder="Es. colloquio">
-                    </div>
-
-                    <label>Note e Dettagli</label>
-                    <textarea id="note" rows="4" placeholder="Eventuali note aggiuntive..."></textarea>
-
-                    <button class="btn-invia" id="btnInvia">📤 Invia Prenotazione</button>
-                    <div id="statusPrenota"></div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- ==================== FARMACIA ==================== -->
-    <div id="page-farmacia" class="page">
-        <section class="section prezzi-section">
-            <div class="section-title">
-                <h2>Listino Prezzi</h2>
-                <p>Tariffario ufficiale dei servizi sanitari, certificati e prodotti farmaceutici.</p>
-            </div>
-
-            <div class="prezzo-categoria">
-                <div class="prezzo-header"><i class="fas fa-file-medical"></i> &nbsp; Certificati Anamnestici</div>
-                <div class="prezzo-lista">
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Porto d'armi - Difesa personale<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div>
-                        <div class="prezzo-valore">7.000€</div>
-                    </div>
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Concorso Pubblico<small>Prelievo ematico obbligatorio</small></div>
-                        <div class="prezzo-valore">1.000€</div>
-                    </div>
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Idoneità lavorativa<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div>
-                        <div class="prezzo-valore">7.000€</div>
-                    </div>
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Test Attitudinali<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div>
-                        <div class="prezzo-valore">8.000€</div>
+                <label>Discord ID (opzionale)</label>
+                <input type="text" id="discordId" placeholder="1475551757882383878">
+                <div class="row-form">
+                    <div><label>Data Richiesta *</label><input type="date" id="dataRichiesta"></div>
+                    <div>
+                        <label>Fascia Oraria *</label>
+                        <select id="fasciaOraria">
+                            <option value="">Seleziona...</option>
+                            <option>08:00 - 10:00</option><option>10:00 - 12:00</option><option>12:00 - 14:00</option>
+                            <option>14:00 - 16:00</option><option>16:00 - 18:00</option><option>18:00 - 20:00</option>
+                            <option>20:00 - 22:00</option><option value="Altro">Altro</option>
+                        </select>
                     </div>
                 </div>
+                <div class="altro-box" id="altraFasciaBox"><label>Specifica fascia</label><input type="text" id="altraFascia"></div>
+                <label>Servizio Richiesto *</label>
+                <select id="servizio">
+                    <option value="">Seleziona...</option>
+                    <option>Visita Medica</option><option>Medicazione</option><option>Colloquio</option>
+                    <option>Controllo</option><option>Visita Psicologica</option><option>Test Attitudinale</option>
+                    <option>Certificato Anamnestico</option><option value="Altro">Altro</option>
+                </select>
+                <div class="altro-box" id="altroServizioBox"><label>Specifica servizio</label><input type="text" id="altroServizio"></div>
+                <label>Note</label><textarea id="note" rows="3"></textarea>
+                <button class="btn-invia" id="btnInvia">📤 Invia Prenotazione</button>
+                <div class="status-box" id="statusPrenota"></div>
             </div>
+        </div>
+    </section>
+</div>
 
-            <div class="prezzo-categoria">
-                <div class="prezzo-header dark"><i class="fas fa-hospital"></i> &nbsp; Ospedale</div>
-                <div class="prezzo-lista">
-                    <div class="prezzo-item"><div class="prezzo-nome">Visita Medica</div><div class="prezzo-valore">3.500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Certificato medico</div><div class="prezzo-valore">10.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Visita medica d'urgenza</div><div class="prezzo-valore free">FREE</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Visita a domicilio o fuori sede</div><div class="prezzo-valore">4.500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Visita Fisioterapica</div><div class="prezzo-valore">1.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Visita Psicologica</div><div class="prezzo-valore">5.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Esami radiologici (TAC, RX, ECO)</div><div class="prezzo-valore">1.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Prelievo ematico</div><div class="prezzo-valore">1.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Destrosio</div><div class="prezzo-valore">250€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Fisiologica</div><div class="prezzo-valore">250€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Propofol</div><div class="prezzo-valore">1.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Naloxone</div><div class="prezzo-valore">1.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Fentanyl</div><div class="prezzo-valore">5.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Trattamenti (Collare, Gessi ecc.)</div><div class="prezzo-valore">1.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Chemioterapia (a seduta)</div><div class="prezzo-valore">1.000€</div></div>
+<!-- ORDINE FARMACIA -->
+<div id="page-ordine" class="page">
+    <section class="section" style="background:#f8fafc; min-height:80vh;">
+        <div class="section-title"><h2>Ordine Farmacia</h2><p>Seleziona i prodotti e invia l'ordine.</p></div>
+        <div class="form-wrapper">
+            <div class="form-header" style="background:#15803d;"><h2>💊 Ordine Farmaci</h2><p style="opacity:0.9;">Croce Rossa Italiana - Farmacia</p></div>
+            <div class="form-body">
+                <label>Nome e Cognome *</label>
+                <input type="text" id="ordineNome" placeholder="Es. Tony Stark">
+                <div class="row-form">
+                    <div><label>Telefono</label><input type="tel" id="ordineTelefono" placeholder="3331234567"></div>
+                    <div><label>Discord ID (opzionale)</label><input type="text" id="ordineDiscord" placeholder="1475551757882383878"></div>
                 </div>
-            </div>
+                <label>Note / Indirizzo consegna</label>
+                <textarea id="ordineNote" rows="2" placeholder="Eventuali note..."></textarea>
 
-            <div class="prezzo-categoria">
-                <div class="prezzo-header blue"><i class="fas fa-syringe"></i> &nbsp; Area Chirurgica</div>
-                <div class="prezzo-lista">
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Intervento Chirurgico programmato<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div>
-                        <div class="prezzo-valore">7.500€</div>
-                    </div>
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Intervento chirurgico d'urgenza<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div>
-                        <div class="prezzo-valore">1.000€</div>
-                    </div>
-                    <div class="prezzo-item">
-                        <div class="prezzo-nome">Intervento Chirurgia plastica</div>
-                        <div class="prezzo-valore">1.500.000€</div>
-                    </div>
+                <div class="categoria-title">Farmaci senza ricetta (500€ cad.)</div>
+                <div class="farmaci-grid" id="farmaciSenza"></div>
+
+                <div class="categoria-title">Farmaci con ricetta (800€ cad.)</div>
+                <div class="farmaci-grid" id="farmaciCon"></div>
+
+                <div class="categoria-title">Altri prodotti</div>
+                <div class="farmaci-grid" id="farmaciAltri"></div>
+
+                <div class="totale-box">
+                    <div>Totale ordine</div>
+                    <span id="totaleOrdine">0€</span>
                 </div>
+
+                <button class="btn-invia" id="btnOrdine" style="background:#15803d;">📤 Invia Ordine</button>
+                <div class="status-box" id="statusOrdine"></div>
             </div>
+        </div>
+    </section>
+</div>
 
-            <div class="prezzo-categoria">
-                <div class="prezzo-header green"><i class="fas fa-pills"></i> &nbsp; Farmaci senza ricetta</div>
-                <div class="prezzo-lista">
-                    <div class="prezzo-item"><div class="prezzo-nome">OKI</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Benagol</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Brufen</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Tachipirina</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Pantorc</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Ketorolac</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Connettivina</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Betadine</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Voltaren</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Lasix</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Rocephin</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Bentelan</div><div class="prezzo-valore">500€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Clorfenamina</div><div class="prezzo-valore">500€</div></div>
-                </div>
-            </div>
+<!-- LISTINO PREZZI -->
+<div id="page-farmacia" class="page">
+    <section class="section prezzi-section">
+        <div class="section-title"><h2>Listino Prezzi</h2></div>
+        <div class="prezzo-categoria">
+            <div class="prezzo-header"><i class="fas fa-file-medical"></i> Certificati Anamnestici</div>
+            <div class="prezzo-item"><div class="prezzo-nome">Porto d'armi - Difesa personale<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div><div class="prezzo-valore">7.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Concorso Pubblico<small>Prelievo ematico obbligatorio</small></div><div class="prezzo-valore">1.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Idoneità lavorativa<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div><div class="prezzo-valore">7.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Test Attitudinali<small>Obbligatorio Prelievo Ematico (+1.000€)</small></div><div class="prezzo-valore">8.000€</div></div>
+        </div>
+        <div class="prezzo-categoria">
+            <div class="prezzo-header dark"><i class="fas fa-hospital"></i> Ospedale</div>
+            <div class="prezzo-item"><div class="prezzo-nome">Visita Medica</div><div class="prezzo-valore">3.500€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Certificato medico</div><div class="prezzo-valore">10.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Visita medica d'urgenza</div><div class="prezzo-valore free">FREE</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Visita a domicilio</div><div class="prezzo-valore">4.500€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Visita Fisioterapica</div><div class="prezzo-valore">1.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Visita Psicologica</div><div class="prezzo-valore">5.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Esami radiologici</div><div class="prezzo-valore">1.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Prelievo ematico</div><div class="prezzo-valore">1.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Destrosio / Fisiologica</div><div class="prezzo-valore">250€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Propofol / Naloxone</div><div class="prezzo-valore">1.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Somministrazione Fentanyl</div><div class="prezzo-valore">5.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Trattamenti / Chemioterapia</div><div class="prezzo-valore">1.000€</div></div>
+        </div>
+        <div class="prezzo-categoria">
+            <div class="prezzo-header blue"><i class="fas fa-syringe"></i> Area Chirurgica</div>
+            <div class="prezzo-item"><div class="prezzo-nome">Intervento programmato<small>+ Prelievo 1.000€</small></div><div class="prezzo-valore">7.500€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Intervento d'urgenza<small>+ Prelievo 1.000€</small></div><div class="prezzo-valore">1.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Chirurgia plastica</div><div class="prezzo-valore">1.500.000€</div></div>
+        </div>
+        <div class="prezzo-categoria">
+            <div class="prezzo-header green"><i class="fas fa-pills"></i> Farmaci senza ricetta</div>
+            <div class="prezzo-item"><div class="prezzo-nome">OKI, Benagol, Brufen, Tachipirina, Pantorc, Ketorolac, Connettivina, Betadine, Voltaren, Lasix, Rocephin, Bentelan, Clorfenamina</div><div class="prezzo-valore">500€</div></div>
+        </div>
+        <div class="prezzo-categoria">
+            <div class="prezzo-header"><i class="fas fa-prescription"></i> Farmaci con ricetta</div>
+            <div class="prezzo-item"><div class="prezzo-nome">Cardioaspirina, Augmentin, Cipralex, Xanax, Clexane, Adrenalina, Gabapentin</div><div class="prezzo-valore">800€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Morfina</div><div class="prezzo-valore">30.000€</div></div>
+            <div class="prezzo-item"><div class="prezzo-nome">Bende</div><div class="prezzo-valore">1.000€</div></div>
+        </div>
+    </section>
+</div>
 
-            <div class="prezzo-categoria">
-                <div class="prezzo-header"><i class="fas fa-prescription"></i> &nbsp; Farmaci con ricetta medica</div>
-                <div class="prezzo-lista">
-                    <div class="prezzo-item"><div class="prezzo-nome">Cardioaspirina</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Augmentin</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Cipralex</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Xanax</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Clexane</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Adrenalina</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Gabapentin</div><div class="prezzo-valore">800€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Morfina</div><div class="prezzo-valore">30.000€</div></div>
-                    <div class="prezzo-item"><div class="prezzo-nome">Bende</div><div class="prezzo-valore">1.000€</div></div>
-                </div>
-            </div>
-        </section>
-    </div>
+<!-- CONTATTI -->
+<div id="page-contatti" class="page">
+    <section class="section" style="min-height:60vh;text-align:center;">
+        <div class="section-title"><h2>Contatti</h2><p>Emergenze: <strong style="color:#c8102e;">118</strong></p></div>
+        <p style="color:#64748b;line-height:2;"><strong>Croce Rossa Italiana</strong><br>Sistema Prenotazioni e Farmacia attivo 24/7</p>
+    </section>
+</div>
 
-    <!-- ==================== CONTATTI ==================== -->
-    <div id="page-contatti" class="page">
-        <section class="section" style="min-height:60vh; text-align:center;">
-            <div class="section-title">
-                <h2>Contatti</h2>
-                <p>Per emergenze chiama il <strong style="color:#c8102e;">118</strong></p>
-            </div>
-            <p style="font-size:1.1rem; color:#64748b; line-height:2;">
-                <strong>Croce Rossa Italiana</strong><br>
-                Sistema Prenotazioni attivo 24/7<br>
-                Emergenze: 118
-            </p>
-        </section>
-    </div>
+<footer>
+    <strong>Croce Rossa Italiana</strong><br>
+    Emergenze: 118 | Sistema attivo 24/7<br>© 2026
+</footer>
 
-    <footer>
-        <strong>Croce Rossa Italiana</strong><br>
-        Emergenze: 118 &nbsp;|&nbsp; Sistema Prenotazioni attivo 24/7<br>
-        © 2026 - Tutti i diritti riservati
-    </footer>
+<script>
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1404031611246481418/SYAH_JiFJTePehOomHD-LMGJAlyDOI30Uw-Fibb96CD2evH8QAF-ffrufioZqIaNxYB8";
+const CONFERMA_PAGE = "https://damy97d.github.io/Prenotazioni-Cri/conferma.html";
 
-    <script>
-        // ========== NAVIGAZIONE SEZIONI ==========
-        function mostraPagina(nome) {
-            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-            document.getElementById('page-' + nome).classList.add('active');
+// Lista farmaci
+const FARMACI = {
+    senza: [
+        { nome: "OKI", prezzo: 500 }, { nome: "Benagol", prezzo: 500 }, { nome: "Brufen", prezzo: 500 },
+        { nome: "Tachipirina", prezzo: 500 }, { nome: "Pantorc", prezzo: 500 }, { nome: "Ketorolac", prezzo: 500 },
+        { nome: "Connettivina", prezzo: 500 }, { nome: "Betadine", prezzo: 500 }, { nome: "Voltaren", prezzo: 500 },
+        { nome: "Lasix", prezzo: 500 }, { nome: "Rocephin", prezzo: 500 }, { nome: "Bentelan", prezzo: 500 },
+        { nome: "Clorfenamina", prezzo: 500 }
+    ],
+    con: [
+        { nome: "Cardioaspirina", prezzo: 800 }, { nome: "Augmentin", prezzo: 800 }, { nome: "Cipralex", prezzo: 800 },
+        { nome: "Xanax", prezzo: 800 }, { nome: "Clexane", prezzo: 800 }, { nome: "Adrenalina", prezzo: 800 },
+        { nome: "Gabapentin", prezzo: 800 }
+    ],
+    altri: [
+        { nome: "Morfina", prezzo: 30000 }, { nome: "Bende", prezzo: 1000 }
+    ]
+};
 
-            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-            const nav = document.getElementById('nav-' + nome);
-            if (nav) nav.classList.add('active');
+function mostraPagina(nome) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + nome).classList.add('active');
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const nav = document.getElementById('nav-' + nome);
+    if (nav) nav.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // ========== PRENOTAZIONI ==========
-        const WEBHOOK_URL = "https://discord.com/api/webhooks/1404031611246481418/SYAH_JiFJTePehOomHD-LMGJAlyDOI30Uw-Fibb96CD2evH8QAF-ffrufioZqIaNxYB8";
-        const CONFERMA_PAGE = "https://damy97d.github.io/Prenotazioni-Cri/conferma.html";
-
-        document.getElementById('fasciaOraria').addEventListener('change', function() {
-            document.getElementById('altraFasciaBox').style.display = this.value === 'Altro' ? 'block' : 'none';
-        });
-        document.getElementById('servizio').addEventListener('change', function() {
-            document.getElementById('altroServizioBox').style.display = this.value === 'Altro' ? 'block' : 'none';
-        });
-        document.getElementById('dataRichiesta').valueAsDate = new Date();
-
-        document.getElementById('btnInvia').addEventListener('click', async () => {
-            const nome = document.getElementById('nome').value.trim();
-            const dataNascita = document.getElementById('dataNascita').value;
-            const telefono = document.getElementById('telefono').value.trim() || '//';
-            const discordIdRaw = document.getElementById('discordId').value.trim();
-            const discordId = discordIdRaw ? `<@${discordIdRaw}>` : 'Non fornito';
-            let dataRichiesta = document.getElementById('dataRichiesta').value;
-            let fascia = document.getElementById('fasciaOraria').value;
-            let servizio = document.getElementById('servizio').value;
-            const note = document.getElementById('note').value.trim() || 'Nessuna nota aggiuntiva.';
-
-            if (!nome || !dataNascita || !dataRichiesta || !fascia || !servizio) {
-                alert('Compila tutti i campi obbligatori (*)');
-                return;
-            }
-
-            if (fascia === 'Altro') fascia = document.getElementById('altraFascia').value.trim() || 'Non specificata';
-            if (servizio === 'Altro') servizio = 'Altro: ' + (document.getElementById('altroServizio').value.trim() || 'Non specificato');
-
-            const formatDate = (d) => {
-                if (!d) return '—';
-                const [y, m, day] = d.split('-');
-                return `${day}/${m}/${y}`;
-            };
-
-            const now = new Date();
-            const dataOraInvio = now.toLocaleDateString('it-IT') + ' ' + now.toLocaleTimeString('it-IT', {hour:'2-digit', minute:'2-digit'});
-
-            const params = new URLSearchParams({
-                nome, data: formatDate(dataRichiesta), fascia, servizio, note,
-                discord: discordIdRaw || ''
+// Genera griglia farmaci
+function creaFarmaciHTML(lista, containerId) {
+    const container = document.getElementById(containerId);
+    lista.forEach((f, i) => {
+        const id = containerId + '_' + i;
+        container.innerHTML += `
+            <div class="farmaco-item">
+                <input type="checkbox" id="${id}" data-nome="${f.nome}" data-prezzo="${f.prezzo}" onchange="aggiornaTotale()">
+                <label for="${id}">${f.nome}</label>
+                <input type="number" id="${id}_qty" min="1" value="1" style="display:none;" onchange="aggiornaTotale()">
+                <span class="prezzo">${f.prezzo.toLocaleString('it-IT')}€</span>
+            </div>`;
+        // Mostra qty quando checked
+        setTimeout(() => {
+            const cb = document.getElementById(id);
+            const qty = document.getElementById(id + '_qty');
+            cb.addEventListener('change', () => {
+                qty.style.display = cb.checked ? 'block' : 'none';
+                aggiornaTotale();
             });
-            const linkConferma = `${CONFERMA_PAGE}?${params.toString()}`;
+        }, 50);
+    });
+}
+creaFarmaciHTML(FARMACI.senza, 'farmaciSenza');
+creaFarmaciHTML(FARMACI.con, 'farmaciCon');
+creaFarmaciHTML(FARMACI.altri, 'farmaciAltri');
 
-            const status = document.getElementById('statusPrenota');
-            const btn = document.getElementById('btnInvia');
-            btn.disabled = true;
-            status.style.display = 'block';
-            status.style.background = '#fff3cd';
-            status.style.color = '#856404';
-            status.innerHTML = '⏳ Invio in corso...';
+function aggiornaTotale() {
+    let totale = 0;
+    document.querySelectorAll('.farmaco-item input[type="checkbox"]:checked').forEach(cb => {
+        const qty = parseInt(document.getElementById(cb.id + '_qty').value) || 1;
+        totale += parseInt(cb.dataset.prezzo) * qty;
+    });
+    document.getElementById('totaleOrdine').textContent = totale.toLocaleString('it-IT') + '€';
+}
 
-            let mentions = `<@&963862795890360360> <@&963862193655414805> <@&1099742102184804428> <@&963862191663116318>`;
-            if (servizio === 'Test Attitudinale' || servizio === 'Visita Psicologica') {
-                mentions = `<@&1059959831143919717>`;
-            } else if (servizio === 'Colloquio') {
-                mentions = `<@&1498075053294620704> <@&1099742102184804428> <@&1312723262270083133>`;
-            }
+// ===== PRENOTAZIONI =====
+document.getElementById('fasciaOraria').addEventListener('change', function() {
+    document.getElementById('altraFasciaBox').style.display = this.value === 'Altro' ? 'block' : 'none';
+});
+document.getElementById('servizio').addEventListener('change', function() {
+    document.getElementById('altroServizioBox').style.display = this.value === 'Altro' ? 'block' : 'none';
+});
+document.getElementById('dataRichiesta').valueAsDate = new Date();
 
-            const payload = {
+document.getElementById('btnInvia').addEventListener('click', async () => {
+    const nome = document.getElementById('nome').value.trim();
+    const dataNascita = document.getElementById('dataNascita').value;
+    const telefono = document.getElementById('telefono').value.trim() || '//';
+    const discordIdRaw = document.getElementById('discordId').value.trim();
+    let dataRichiesta = document.getElementById('dataRichiesta').value;
+    let fascia = document.getElementById('fasciaOraria').value;
+    let servizio = document.getElementById('servizio').value;
+    const note = document.getElementById('note').value.trim() || 'Nessuna nota.';
+
+    if (!nome || !dataNascita || !dataRichiesta || !fascia || !servizio) { alert('Compila i campi obbligatori'); return; }
+    if (fascia === 'Altro') fascia = document.getElementById('altraFascia').value.trim() || 'Non specificata';
+    if (servizio === 'Altro') servizio = 'Altro: ' + (document.getElementById('altroServizio').value.trim() || 'N/D');
+
+    const formatDate = d => { const [y,m,day] = d.split('-'); return `${day}/${m}/${y}`; };
+    const now = new Date();
+    const dataOra = now.toLocaleDateString('it-IT') + ' ' + now.toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'});
+
+    const params = new URLSearchParams({ nome, data: formatDate(dataRichiesta), fascia, servizio, note, discord: discordIdRaw || '' });
+    const linkConferma = `${CONFERMA_PAGE}?${params}`;
+
+    let mentions = `<@&963862795890360360> <@&963862193655414805> <@&1099742102184804428> <@&963862191663116318>`;
+    if (servizio === 'Test Attitudinale' || servizio === 'Visita Psicologica') mentions = `<@&1059959831143919717>`;
+    else if (servizio === 'Colloquio') mentions = `<@&1498075053294620704> <@&1099742102184804428> <@&1312723262270083133>`;
+
+    const status = document.getElementById('statusPrenota');
+    const btn = document.getElementById('btnInvia');
+    btn.disabled = true; status.style.display = 'block'; status.style.background = '#fff3cd'; status.innerHTML = '⏳ Invio...';
+
+    try {
+        const res = await fetch(WEBHOOK_URL, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
                 content: mentions,
                 embeds: [{
                     title: "📅 Nuova Prenotazione Ricevuta",
-                    description: "È stata inviata una nuova richiesta dal portale pubblico.\n\n[✅ **Gestisci Prenotazione**](" + linkConferma + ")",
+                    description: `Richiesta dal portale.\n\n[✅ **Gestisci Prenotazione**](${linkConferma})`,
                     color: 0xc8102e,
                     fields: [
                         { name: "👤 Paziente", value: nome, inline: true },
                         { name: "🎂 Data Nascita", value: formatDate(dataNascita), inline: true },
                         { name: "📞 Telefono", value: telefono, inline: true },
-                        { name: "💬 Discord ID", value: discordId, inline: true },
-                        { name: "📅 Data Richiesta", value: formatDate(dataRichiesta), inline: true },
-                        { name: "⏰ Fascia Oraria", value: fascia, inline: true },
-                        { name: "⚕️ Servizio/i Richiesto/i", value: servizio, inline: false },
-                        { name: "📝 Note e Dettagli", value: note, inline: false }
+                        { name: "💬 Discord", value: discordIdRaw ? `<@${discordIdRaw}>` : 'Non fornito', inline: true },
+                        { name: "📅 Data", value: formatDate(dataRichiesta), inline: true },
+                        { name: "⏰ Fascia", value: fascia, inline: true },
+                        { name: "⚕️ Servizio", value: servizio, inline: false },
+                        { name: "📝 Note", value: note, inline: false }
                     ],
-                    footer: { text: `Croce Rossa - Sistema Prenotazioni • ${dataOraInvio}` }
+                    footer: { text: `Croce Rossa • ${dataOra}` }
                 }]
-            };
-
-            try {
-                const response = await fetch(WEBHOOK_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-                if (response.ok) {
-                    status.style.background = '#d4edda';
-                    status.style.color = '#155724';
-                    status.innerHTML = '✅ Prenotazione inviata con successo!';
-                    document.getElementById('nome').value = '';
-                    document.getElementById('dataNascita').value = '';
-                    document.getElementById('telefono').value = '';
-                    document.getElementById('discordId').value = '';
-                    document.getElementById('note').value = '';
-                    document.getElementById('fasciaOraria').value = '';
-                    document.getElementById('servizio').value = '';
-                    document.getElementById('altraFasciaBox').style.display = 'none';
-                    document.getElementById('altroServizioBox').style.display = 'none';
-                } else throw new Error('Errore durante l\'invio');
-            } catch (err) {
-                status.style.background = '#f8d7da';
-                status.style.color = '#721c24';
-                status.innerHTML = '❌ Errore: ' + err.message;
-            }
-            btn.disabled = false;
+            })
         });
-    </script>
+        if (res.ok) {
+            status.style.background = '#d4edda'; status.innerHTML = '✅ Prenotazione inviata!';
+            ['nome','dataNascita','telefono','discordId','note'].forEach(id => document.getElementById(id).value = '');
+            document.getElementById('fasciaOraria').value = ''; document.getElementById('servizio').value = '';
+        } else throw new Error('Errore invio');
+    } catch(e) { status.style.background = '#f8d7da'; status.innerHTML = '❌ ' + e.message; }
+    btn.disabled = false;
+});
+
+// ===== ORDINE FARMACIA =====
+document.getElementById('btnOrdine').addEventListener('click', async () => {
+    const nome = document.getElementById('ordineNome').value.trim();
+    const telefono = document.getElementById('ordineTelefono').value.trim() || '//';
+    const discordRaw = document.getElementById('ordineDiscord').value.trim();
+    const note = document.getElementById('ordineNote').value.trim() || 'Nessuna nota.';
+
+    if (!nome) { alert('Inserisci il nome'); return; }
+
+    const selezionati = [];
+    let totale = 0;
+    document.querySelectorAll('.farmaco-item input[type="checkbox"]:checked').forEach(cb => {
+        const qty = parseInt(document.getElementById(cb.id + '_qty').value) || 1;
+        const prezzo = parseInt(cb.dataset.prezzo);
+        const subtotale = prezzo * qty;
+        totale += subtotale;
+        selezionati.push(`• ${cb.dataset.nome} x${qty} — **${subtotale.toLocaleString('it-IT')}€**`);
+    });
+
+    if (selezionati.length === 0) { alert('Seleziona almeno un prodotto'); return; }
+
+    const status = document.getElementById('statusOrdine');
+    const btn = document.getElementById('btnOrdine');
+    btn.disabled = true; status.style.display = 'block'; status.style.background = '#fff3cd'; status.innerHTML = '⏳ Invio ordine...';
+
+    const now = new Date();
+    const dataOra = now.toLocaleDateString('it-IT') + ' ' + now.toLocaleTimeString('it-IT', {hour:'2-digit',minute:'2-digit'});
+
+    try {
+        const res = await fetch(WEBHOOK_URL, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                content: `<@&963862795890360360> <@&963862193655414805> <@&1099742102184804428> <@&963862191663116318>`,
+                embeds: [{
+                    title: "💊 Nuovo Ordine Farmacia",
+                    color: 0x15803d,
+                    fields: [
+                        { name: "👤 Cliente", value: nome, inline: true },
+                        { name: "📞 Telefono", value: telefono, inline: true },
+                        { name: "💬 Discord", value: discordRaw ? `<@${discordRaw}>` : 'Non fornito', inline: true },
+                        { name: "🛒 Prodotti ordinati", value: selezionati.join('\n'), inline: false },
+                        { name: "💰 TOTALE", value: `**${totale.toLocaleString('it-IT')}€**`, inline: false },
+                        { name: "📝 Note", value: note, inline: false }
+                    ],
+                    footer: { text: `Croce Rossa - Farmacia • ${dataOra}` }
+                }]
+            })
+        });
+        if (res.ok) {
+            status.style.background = '#d4edda'; status.innerHTML = '✅ Ordine inviato con successo!';
+            document.getElementById('ordineNome').value = '';
+            document.getElementById('ordineTelefono').value = '';
+            document.getElementById('ordineDiscord').value = '';
+            document.getElementById('ordineNote').value = '';
+            document.querySelectorAll('.farmaco-item input[type="checkbox"]').forEach(cb => { cb.checked = false; });
+            document.querySelectorAll('.farmaco-item input[type="number"]').forEach(q => { q.style.display = 'none'; q.value = 1; });
+            aggiornaTotale();
+        } else throw new Error('Errore invio');
+    } catch(e) { status.style.background = '#f8d7da'; status.innerHTML = '❌ ' + e.message; }
+    btn.disabled = false;
+});
+</script>
 </body>
 </html>
