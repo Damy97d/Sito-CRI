@@ -3184,7 +3184,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
         <div class="area-layout">
         <aside class="miei-dati-box">
             <h3><i class="fas fa-id-card"></i> I miei dati</h3>
-            <p class="hint">Dati dal tuo account (Google Sheet). Non modificabili da qui: chiedi a un amministratore per variazioni.</p>
+            <p class="hint">Dati dal tuo account. Non modificabili da qui: chiedi a un amministratore per variazioni.</p>
             <label>Username</label>
             <input type="text" id="mieiDatiUsername" readonly tabindex="-1" style="opacity:0.95;cursor:default;">
             <label>Nome</label>
@@ -3231,7 +3231,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
             <div class="area-card clickable" id="card-organico" onclick="if(requireAccess('organico','Organico')) mostraPagina('area-organico')">
                 <i class="fas fa-sitemap"></i>
                 <h3>Organico</h3>
-                <p>Foglio organico Google Sheets</p>
+                <p>Foglio organico</p>
             </div>
             <div class="area-card clickable" id="card-fatturazione" onclick="if(requireAccess('fatturazione','Fatturazione')) apriFatturazione()">
                 <i class="fas fa-file-invoice-dollar"></i>
@@ -3276,7 +3276,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
             <div class="area-card clickable" id="card-amministratore" onclick="if(requireAccess('amministratore','Amministratore')) apriAmministratore()">
                 <i class="fas fa-user-cog"></i>
                 <h3>Amministratore</h3>
-                <p>Crea credenziali operatori su Google Sheet</p>
+                <p>Crea credenziali operatori</p>
             </div>
         </div><!-- /area-grid -->
         </div><!-- /area-main-col -->
@@ -3296,7 +3296,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
         <button class="btn-logout" onclick="logoutArea()"><i class="fas fa-sign-out-alt"></i> Esci</button>
       </div>
     </div>
-    <p style="max-width:900px;margin:0 auto 20px;color:#94a3b8;text-align:center;">Crea e gestisci le credenziali operatori su Google Sheet. Accesso da <strong style="color:#e2e8f0;">Vice Direttore Sanitario</strong> in su.</p>
+    <p style="max-width:900px;margin:0 auto 20px;color:#94a3b8;text-align:center;">Crea e gestisci le credenziali operatori. Accesso da <strong style="color:#e2e8f0;">Vice Direttore Sanitario</strong> in su.</p>
     <div style="max-width:920px;margin:0 auto;display:grid;gap:22px;">
       <div style="background:#1e293b;border:1px solid #334155;border-radius:16px;padding:22px;">
         <h3 style="color:#fca5a5;margin-bottom:14px;"><i class="fas fa-user-plus"></i> Nuovo operatore</h3>
@@ -3318,7 +3318,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
           <input type="checkbox" id="admAddetto" style="width:18px;height:18px;accent-color:#c8102e;"> Addetto colloqui
         </label>
         <button type="button" onclick="adminCreaUtente()" style="margin-top:16px;background:#c8102e;color:#fff;border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer;">
-          <i class="fas fa-save"></i> Crea e salva su Sheet
+          <i class="fas fa-save"></i> Crea e salva
         </button>
         <div id="admStatus" style="margin-top:12px;font-weight:600;display:none;"></div>
       </div>
@@ -3952,7 +3952,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
         <button class="btn-logout" onclick="logoutArea()"><i class="fas fa-sign-out-alt"></i> Esci</button>
       </div>
     </div>
-    <p style="max-width:960px;margin:0 auto 18px;color:#94a3b8;text-align:center;">Registro fatture da Google Sheet. Accesso da <strong style="color:#e2e8f0;">Vice Direttore Amministrativo</strong> in su. Netto = 50% del lordo.</p>
+    <p style="max-width:960px;margin:0 auto 18px;color:#94a3b8;text-align:center;">Registro fatture. Accesso da <strong style="color:#e2e8f0;">Vice Direttore Amministrativo</strong> in su. Netto = 50% del lordo.</p>
 
     <div style="max-width:960px;margin:0 auto 22px;background:#1e293b;border:1px solid #334155;border-radius:16px;padding:20px;">
       <h3 style="color:#fca5a5;margin-bottom:12px;"><i class="fas fa-calendar-alt"></i> Riepilogo periodo</h3>
@@ -4699,7 +4699,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
     </div>
 </div>
 
-<!-- ========== ORGANICO (Google Sheet) ========== -->
+<!-- ========== ORGANICO========== -->
 <div id="page-area-organico" class="page">
     <div class="area-page" style="padding:16px 10px;">
         <div class="area-header" style="max-width:1400px;margin:0 auto 16px;">
@@ -5371,7 +5371,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
 <button type="button" onclick="timbraInviaReportTotali()" style="background:#1d4ed8;color:white;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;">📊 Report ore totali Discord</button>
 <button type="button" onclick="timbraAzzeraSettimana()" style="background:#ea580c;color:white;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;">🗑 Azzera settimana</button>
 <button type="button" onclick="timbraAzzeraTotali()" style="background:#7f1d1d;color:white;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;">⚠ Azzera ore totali</button>
-<button type="button" onclick="renderGestioneOre(true)" style="background:#334155;color:#e2e8f0;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;">🔄 Aggiorna da Sheet</button>
+<button type="button" onclick="renderGestioneOre(true)" style="background:#334155;color:#e2e8f0;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;">🔄 Aggiorna</button>
 </div>
 <div id="statusGestioneOre" style="display:none;padding:12px;border-radius:8px;font-weight:600;text-align:center;margin-bottom:14px;"></div>
 <div style="background:#1e293b;border:1px solid #166534;border-radius:16px;padding:16px 18px;margin-bottom:16px;">
@@ -5380,7 +5380,7 @@ body.theme-light .section-title h2 { color: #0f172a !important; }
     <button type="button" onclick="renderGestioneOre(true)" style="background:#334155;color:#e2e8f0;border:none;padding:6px 12px;border-radius:8px;font-weight:600;cursor:pointer;font-size:0.85rem;">🔄 Aggiorna</button>
   </div>
   <div id="timbraTurniAttiviBox" style="color:#94a3b8;font-size:0.9rem;">Caricamento…</div>
-  <p style="color:#64748b;font-size:0.78rem;margin:10px 0 0;">Aggiornamento automatico ogni 15s da Google Sheet. Serve lo script aggiornato con colonna <code>turnoInizio</code>.</p>
+  <p style="color:#64748b;font-size:0.78rem;margin:10px 0 0;">Aggiornamento automatico ogni 15s. Serve lo script aggiornato con colonna <code>turnoInizio</code>.</p>
 </div>
 <div style="background:#1e293b;border:1px solid #334155;border-radius:16px;overflow:hidden;"><div style="overflow-x:auto;">
 <table style="width:100%;border-collapse:collapse;color:#e2e8f0;"><thead><tr style="background:#0f172a;">
@@ -5486,7 +5486,7 @@ function getFirmaDottore() {
 }
 
 
-// ===== CONTABILITA FATTURE (Google Sheet) =====
+// ===== CONTABILITA FATTURE=====
 const CONTABILITA_SHEET_URL = "https://script.google.com/macros/s/AKfycbyp8O944wvlYvyGCycZT929oUiL5wU9o0IwYZM4dxXOXehiE7oMjKXFwthQHv-O5sc4/exec"; // URL /exec dello script Contabilita_GoogleAppsScript.js
 const CONTABILITA_SECRET = "CRI_Contab_Stark_2026";
 
@@ -6215,7 +6215,7 @@ async function adminCreaUtente() {
   try {
     const data = await authSheetCall(payload);
     if (data && data.ok) {
-      if (status) { status.style.color = '#4ade80'; status.textContent = '✅ Utente creato su Google Sheet'; }
+      if (status) { status.style.color = '#4ade80'; status.textContent = '✅ Utente creato'; }
       inviaLogCRI('Amministratore · Utente creato', payload.username + ' · ' + payload.grado + (payload.addettoColloqui === 'SI' ? ' · Addetto colloqui' : ''));
       ['admUser','admPass','admNome','admCognome','admDiscord'].forEach(function(id){ const el=document.getElementById(id); if(el) el.value=''; });
       const ad = document.getElementById('admAddetto'); if (ad) ad.checked = false;
@@ -6251,7 +6251,7 @@ async function adminCaricaUtenti() {
       return;
     }
     const list = data.utenti || [];
-    if (!list.length) { box.textContent = 'Nessun utente nello Sheet'; return; }
+    if (!list.length) { box.textContent = 'Nessun utente'; return; }
     const optGradi = CRI_GRADI.map(function(g){ return '<option value="'+g.replace(/"/g,'&quot;')+'">'+g+'</option>'; }).join('');
     box.innerHTML = '<p style="color:#94a3b8;font-size:0.85rem;margin-bottom:10px;">Modifica grado / addetto colloqui e premi <strong style="color:#e2e8f0;">Salva</strong>.</p>'
       + '<table style="width:100%;border-collapse:collapse;color:#e2e8f0;font-size:0.85rem;"><thead><tr style="color:#fca5a5;text-align:left;"><th style="padding:8px;">User</th><th style="padding:8px;">Nome</th><th style="padding:8px;">Grado</th><th style="padding:8px;">Colloqui</th><th style="padding:8px;">Attivo</th><th style="padding:8px;"></th></tr></thead><tbody>'
@@ -6280,7 +6280,7 @@ async function adminCaricaUtenti() {
 }
 
 function adminCaricaUtentiConPrompt() {
-  const p = prompt('Password account (per azioni admin sullo Sheet):');
+  const p = prompt('Password account (per azioni admin):');
   if (p == null) return;
   try { sessionStorage.setItem('cri_auth_pass_tmp', p); } catch (e) {}
   adminCaricaUtenti();
@@ -6334,7 +6334,7 @@ async function adminSalvaUtente(username, idx) {
 
 async function adminEliminaUtente(username) {
   if (!username) return;
-  if (!confirm("Eliminare definitivamente l'utente \"" + username + "\" dallo Sheet?\nQuesta azione non si può annullare.")) return;
+  if (!confirm("Eliminare definitivamente l'utente \"" + username + "\" ?\nQuesta azione non si può annullare.")) return;
   const sess = getSessioneOperatore();
   if (!sess || !sess.username) { alert("Sessione non valida"); return; }
   if (String(username).toLowerCase() === String(sess.username).toLowerCase()) {
