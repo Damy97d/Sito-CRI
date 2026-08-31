@@ -1,4 +1,4 @@
 {
-  "version": "20260818-1066",
+  "version": "20260818-1067",
   "note": "Incrementa version a ogni deploy su GitHub per forzare il refresh ai client"
 }
